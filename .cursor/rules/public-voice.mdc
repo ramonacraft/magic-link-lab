@@ -1,0 +1,26 @@
+---
+description: Keep Magic Link Lab public copy clean, professional, and free of employer or live-auth details
+alwaysApply: true
+---
+
+# Public voice and privacy
+
+This repo is a public portfolio demo. Chat may use private background to make P0s real. **Every file that ships** (README, UI copy, commits, comments, sample data, diagrams) stays generic, calm, and professional.
+
+## Always
+
+- Hiring-manager tone. Short. Clean. No slang, gossip, or workplace war stories
+- Call it a **gated article** / **news app** / **magic link**. Never a real brand or employer
+- Sample PRs, emails, and articles are clearly fake
+- Footer and README follow Ramona's public-repo standard (**Notes / Privacy**)
+
+## Never in this repo
+
+- Employer, customer, or product names
+- Live auth URLs, login challenges, device IDs, API keys, or tokens
+- Private personal details
+- Copy that could be read as leaking an internal flow or naming a workplace
+
+## Translate before you write
+
+If a real-world case informed a golden, rewrite it as a generic news-app path before it touches `README.md`, fixtures, or UI.

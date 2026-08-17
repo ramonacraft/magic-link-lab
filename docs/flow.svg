@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="260" viewBox="0 0 980 260" role="img" aria-labelledby="title desc">
+  <title id="title">Magic Link Lab flow</title>
+  <desc id="desc">A fake gated-article PR is drafted into a test plan, scored against a golden, then retried up to three times until it passes or needs a human.</desc>
+
+  <rect width="980" height="260" fill="#0f172a" rx="16"/>
+
+  <text x="110" y="34" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">1. Fake PR</text>
+  <text x="360" y="34" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">2. Draft</text>
+  <text x="610" y="34" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">3. Score</text>
+  <text x="860" y="34" fill="#94a3b8" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">4. Stop rule</text>
+
+  <rect x="30" y="64" width="160" height="48" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="110" y="94" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Gated article</text>
+  <rect x="30" y="128" width="160" height="48" rx="12" fill="#e0f2fe" stroke="#0284c7" stroke-width="2"/>
+  <text x="110" y="158" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Golden</text>
+
+  <path d="M190 88 C230 88, 250 110, 280 118" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <path d="M190 152 C230 152, 250 130, 280 124" fill="none" stroke="#94a3b8" stroke-width="2.5"/>
+  <polygon points="280,121 268,115 268,127" fill="#94a3b8"/>
+
+  <rect x="290" y="96" width="140" height="52" rx="12" fill="#fef3c7" stroke="#d97706" stroke-width="2"/>
+  <text x="360" y="128" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Drafter</text>
+
+  <line x1="430" y1="122" x2="470" y2="122" stroke="#94a3b8" stroke-width="2.5"/>
+  <polygon points="470,122 458,116 458,128" fill="#94a3b8"/>
+
+  <rect x="480" y="70" width="160" height="44" rx="12" fill="#ccfbf1" stroke="#0d9488" stroke-width="2"/>
+  <text x="560" y="98" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Score vs golden</text>
+  <rect x="480" y="128" width="160" height="44" rx="12" fill="#fce7f3" stroke="#be185d" stroke-width="2"/>
+  <text x="560" y="156" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Retry up to 3</text>
+
+  <line x1="640" y1="122" x2="690" y2="122" stroke="#94a3b8" stroke-width="2.5"/>
+  <polygon points="690,122 678,116 678,128" fill="#94a3b8"/>
+
+  <rect x="700" y="70" width="150" height="44" rx="12" fill="#d1fae5" stroke="#059669" stroke-width="2"/>
+  <text x="775" y="98" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Pass</text>
+  <rect x="700" y="128" width="150" height="44" rx="12" fill="#ffe4e6" stroke="#e11d48" stroke-width="2"/>
+  <text x="775" y="156" fill="#0f172a" font-family="ui-sans-serif, system-ui, sans-serif" font-size="15" font-weight="700" text-anchor="middle">Needs human</text>
+
+  <text x="110" y="230" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">Inbox to article path</text>
+  <text x="360" y="230" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">P0-P3 cases from the PR</text>
+  <text x="560" y="230" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">Grade, then critic feedback</text>
+  <text x="775" y="230" fill="#64748b" font-family="ui-sans-serif, system-ui, sans-serif" font-size="13" text-anchor="middle">Clear the bar or hand off</text>
+</svg>
