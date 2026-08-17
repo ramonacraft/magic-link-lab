@@ -22,8 +22,10 @@ Public copy is clean and professional at all times. Chat may use private backgro
 ## Conventions
 
 - Keep the gated-article teaching story at **50% then 100% Pass** (attempt 1 misses pending + dead-link)
+- Teaching golden mixes **web + iOS app + Android app** in the same plan (not a Web-only silo)
+- **No shared cookie.** Ungating on web does not sign them in on iOS or Android. Each surface needs its own magic link. Same-surface session is not prompted again. Web-to-phone is completing **that** tap on the phone, not inheriting the laptop cookie
 - Keep the iOS Mail-tap PR as the **Needs human** story. Briefs must confirm which side (API vs client)
-- Comment embed is a sibling PR, not the teaching story
+- Comment embed is a sibling PR, not the teaching story. Site vs embed in the **same browser**. App login is separate
 - UI is step-through: one click = one attempt. Do not auto-run all retries in a single click
 - Human brief (theory / confirm / fix path) shows only on **Needs human**, and only for missed goldens that have a `brief`
 - App chrome follows personal skill `portfolio-app-style` (Release Gate Lab look)

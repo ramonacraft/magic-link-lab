@@ -1,4 +1,4 @@
-export type Platform = 'Web' | 'iOS' | 'Android' | 'CTV'
+export type Platform = 'Web' | 'iOS' | 'Android' | 'CTV' | 'Web + mobile'
 export type Priority = 'P0' | 'P1' | 'P2' | 'P3'
 export type Verdict = 'pass' | 'needs_human'
 export type LoopPhase = 'idle' | 'in_progress' | Verdict

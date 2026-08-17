@@ -19,7 +19,7 @@ If it cannot score itself, it is not a loop.
 
 ## What problem this solves
 
-Password login is one risk surface. A **magic link** (one-time email login) is another: the user leaves the app, opens the inbox, and taps a link that should sign them in **and** open the story they wanted.
+Password login is one risk surface. A **magic link** (one-time email login) is another: the user leaves the site or the app, opens the inbox, and taps a link that should sign them in **and** open the story they wanted. Web, iOS, and Android each need their own login. There is no shared cookie. A plan that only covers the laptop is not a plan.
 
 Until they tap, the backend may still be **pending** (token not ready). If the API fails after the email already went out, the click is a dead end.
 
@@ -29,11 +29,11 @@ This lab grades an agent on that path. Email + password + Remember me lives in [
 
 | PR | Platform | What you should see |
 |----|----------|---------------------|
-| **#2104 Email link to open a gated article** | Web | Teaching story. Attempt 1 = **50%** (misses pending + dead-link), attempt 2 = **100%**, **Pass** |
-| **#2118 iOS tap in Mail** | iOS | Still under the bar after 3 tries. **Needs human** plus a brief that asks which side (API or client) |
-| **#2124 Android tap opens the story** | Android | Covers the golden on attempt 1. **Pass** |
-| **#2130 Private window / blocked cookies** | Web | Misses the honest-fail path, then **Pass** |
-| **#2136 Comment embed + profile login** | Web | Different risk surface. Misses the extra sign-in, then **Pass** |
+| **#2104 Email link to a gated article** | Web + mobile | Teaching story. Same plan covers web, iOS, and Android as **separate** logins. Attempt 1 = **50%** (misses pending + dead-link), attempt 2 = **100%**, **Pass** |
+| **#2118 iOS tap in Mail after a web start** | iOS | Still under the bar after 3 tries. **Needs human** plus a brief that asks which side (API or client) |
+| **#2124 Android tap after a web start** | Android | Covers the golden on attempt 1. **Pass** |
+| **#2130 Private window / blocked cookies** | Web + mobile | Desktop private window and iOS Safari private browsing. Misses the honest-fail path, then **Pass** |
+| **#2136 Comment embed vs app login** | Web + mobile | Different risk surface. Site and embed should agree in one browser. The app is a separate login. Misses that, then **Pass** |
 
 Sample names and articles are fake. Nothing here is a real product, employer, or customer change.
 
@@ -57,9 +57,9 @@ You should see five fake PRs on the left and the gated-article teaching story se
 
 1. Read [docs/PAPER_WALKTHROUGH.md](docs/PAPER_WALKTHROUGH.md) (the gated-article story on paper)
 2. On PR #2104, click **Run attempt 1** — expect **50%**. Then click **Retry with critic** — expect **100% Pass**
-3. Click the iOS PR. Run three times — expect **Needs human** after attempt 3, then a **Human brief** with theory, a fast confirm, and a fix path
-4. Try Android — expect **Pass** on attempt 1 (not every change needs a retry)
-5. Try the comment-embed PR — expect a retry, then **Pass**. That is not the magic-link teaching story
+3. Click the iOS PR. It is still a web-start then Mail-tap path. Run three times — expect **Needs human** after attempt 3, then a **Human brief** with theory, a fast confirm, and a fix path
+4. Try Android — same web-start mix, **Pass** on attempt 1 (not every change needs a retry)
+5. Try the comment-embed PR — expect a retry, then **Pass**. Site vs widget in one browser. The app is a separate login. It is not the magic-link teaching story
 
 No API key. The drafter and scorer are deterministic so anyone who runs it gets the same screenshot every time.
 

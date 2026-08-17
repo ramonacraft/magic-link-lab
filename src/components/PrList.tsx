@@ -11,7 +11,7 @@ export function PrList({ prs, selectedId, onSelect }: Props) {
     <aside className="panel pr-list" aria-label="Fake pull requests">
       <div className="panel__head">
         <h2>Fake PRs</h2>
-        <p>Five sample changes. The gated article is the teaching story.</p>
+        <p>Five sample changes. The teaching PR mixes web and mobile in one plan.</p>
       </div>
       <ul>
         {prs.map((pr) => {
