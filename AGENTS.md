@@ -9,6 +9,7 @@ Tiny public dashboard that drafts a P0–P3 test plan from a fake PR (email logi
 Public copy is clean and professional at all times. Chat may use private background to shape P0s. Files that ship stay generic.
 
 - README, UI, commits, comments, and sample data: hiring-manager tone
+- Never use "Interview one-liner" or other pitch labels in public copy
 - Never name employers, real products, customers, or live auth hosts
 - Never commit `.env`, tokens, login URLs, or device/API identifiers
 - No workplace war stories in the repo
@@ -42,5 +43,5 @@ Public copy is clean and professional at all times. Chat may use private backgro
 
 ## Related docs
 
-- `README.md` — interview framing + quick start
+- `README.md` — product framing + quick start
 - `docs/PAPER_WALKTHROUGH.md` — gated-article story on paper

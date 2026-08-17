@@ -2,8 +2,6 @@
 
 A tiny dashboard that **drafts a P0–P3 test plan** from a fake PR (email login link to a gated article), **scores it against a golden**, retries with critic feedback, then **passes or escalates to a human** after 3 attempts.
 
-Interview one-liner: **I QA the path from inbox to article, not only email + password.**
-
 ## How the flow works
 
 ![How the flow works](docs/flow.png)
