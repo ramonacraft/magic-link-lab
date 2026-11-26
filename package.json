@@ -21,7 +21,13 @@
     "@vitejs/plugin-react": "^6.0.4",
     "oxlint": "^1.75.0",
     "typescript": "~6.0.2",
-    "vite": "^8.2.0",
-    "vitest": "^4.1.10"
+    "vite": "8.3.8",
+    "vitest": "4.1.12"
+  },
+  "overrides": {
+    "source-map-js": "1.2.4",
+    "vite": "8.3.8",
+    "vitest": "4.1.12",
+    "@vitest/mocker": "4.1.12"
   }
 }
